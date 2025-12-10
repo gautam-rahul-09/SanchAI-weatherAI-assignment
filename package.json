@@ -1,0 +1,17 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "SanchAI Analytics Weather Application",
+  "scripts": {
+    "start": "cd frontend && npm start",
+    "build": "cd frontend && npm run build",
+    "backend": "cd backend && uvicorn main:app --reload",
+    "dev": "concurrently \"npm run backend\" \"npm run start\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "json-server": "^1.0.0-beta.3"
+  }
+}
